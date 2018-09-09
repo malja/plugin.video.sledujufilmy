@@ -18,4 +18,4 @@ Plugin pro Kodi na přehrávání videa ze serveru SledujuFilmy.cz.
   - [script.module.beautifulsoup4](https://mirrors.kodi.tv/addons/krypton/script.module.beautifulsoup4/) ve verzi 4.5.3
   - [script.common.plugin.cache](https://mirrors.kodi.tv/addons/jarvis/script.common.plugin.cache/) ve verzi 2.5.10
   - [script.module.urlresolver](https://github.com/kodil/kodil/tree/master/repo/script.module.urlresolver) ve verzi 5.0.20
-- Stáhnětě si zip s poslední verzí a nainstalujte ji
+- Stáhnětě si [zip s poslední verzí](https://github.com/malja/plugin.video.sledujufilmy/releases/latest) a nainstalujte ji
