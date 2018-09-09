@@ -2,7 +2,7 @@
 *.pyo
 .DS*
 .pylint_rc
-/.idea
+.idea
 /.project
 /.pydevproject
 /.settings

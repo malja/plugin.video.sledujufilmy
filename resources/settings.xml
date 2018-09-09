@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <setting id="debug" type="bool" label="32001" default="false"/>
+
+    <!-- Cache -->
+    <category label="30021">
+        <!-- Cache persistence for categories (in days) -->
+        <setting label="30022" type="slider" id="cache_categories" default="30" range="1,30" option="int" />
+        <!-- Cache persistence for movies (in hours) -->
+        <setting label="30023" type="slider" id="cache_movies" default="24" range="1,48" option="int" />
+    </category>
+
+    <!-- Others -->
+    <category label="30024">
+        <!-- Enable debug -->
+        <setting id="debug" type="bool" label="30019" default="false" />
+    </category>
 </settings>
 

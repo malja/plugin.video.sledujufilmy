@@ -1,16 +1,12 @@
-# -*- coding: utf-8 -*-
-
-from resources.lib import kodilogging
+import xbmcaddon
+from resources.lib.handler import LoggingHandler
 from resources.lib import plugin
 
-import logging
-import xbmcaddon
+# Create new addon
+xbmcaddon.Addon("plugin.video.sledujufilmy")
 
-# Keep this file to a minimum, as Kodi
-# doesn't keep a compiled copy of this
-ADDON = xbmcaddon.Addon()
-kodilogging.config()
+# Register LoggingHandler class as new handler for this addon
+LoggingHandler.register()
 
+# Run entry point to plugin
 plugin.run()
-
-
