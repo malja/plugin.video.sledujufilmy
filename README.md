@@ -1,5 +1,9 @@
 # plugin.video.sledujufilmy
 
+![Final version - New features won't be added, only hotfixes](https://img.shields.io/badge/version-FINAL-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 Plugin pro Kodi na přehrávání videa ze serveru SledujuFilmy.cz.
 
 ## Funkce
