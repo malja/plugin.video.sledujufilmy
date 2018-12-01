@@ -151,7 +151,7 @@ class SledujuFilmy(object):
     @staticmethod
     def _get_movie_sources(html):
         """
-        Return list of all available sources (streams) within given HTML. Cached version.
+        Return list of all available sources (streams) within given HTML.
 
         **Format:**
 
@@ -168,7 +168,6 @@ class SledujuFilmy(object):
         for playerContainer in html.find_all("div", class_="player-container"):
             iframe = playerContainer.find("iframe")
             if iframe:
-
                 server = urlparse.urlparse(iframe["src"])
 
                 links.append({
@@ -189,7 +188,10 @@ class SledujuFilmy(object):
         :param link: Unresolved link.
         :return: bool|str
         """
-        return urlresolver.HostedMediaFile(url=link).resolve()
+        try:
+            return urlresolver.HostedMediaFile(url=link).resolve()
+        except urlresolver.resolver.ResolverError as e:
+            return false
 
     @staticmethod
     def search(name):
